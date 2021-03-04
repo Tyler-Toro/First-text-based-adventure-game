@@ -10,7 +10,7 @@
                    :::::::::::::::::::::::::::::::::::::::::::::::
                    :::::::::::::::::::::::::::::::::::::::::::::::
 
-                   
+
 Welcome to my first project, **Escaping Toro Sanctum**. This is a text based adventure game with user interactivity. Toro Sanctum is a 
 fictional bioengineering facility where the user is placed. The objective of the game is to follow the storyline and choose the correct path that will lead to locating an exit and finding the lost group, Team Bravo. The user is the team leader of Alpha Team, and the story is updated based on the user input. 
 
@@ -70,20 +70,20 @@ response in the "user info" section, nothing is stored as their item, and the pr
                   /|             |             \
                /   |             |              |
               /    |             |              |
-   (Dry Storage)   |             |          *loss*+ retry
-     <Unit A>      |             |                 
-      *Win*        |             |                      
+   (Dry Storage)   |             |           loss + retry
+     Unit A        |             |                 
+      Win          |             |                      
                    |             |                        
               (Freezer)          |                         
-               <Unit B>          |                          
-          *loss*+ retry          |                        
+                Unit B           |                          
+           loss + retry          |                        
                                  /\                      
                                /    \                   
                              /        \                   
                           /              \              
                 (Emergency Exit)        (Return to Basement)
                         |                       |
-                   *loss*+ retry            (Basement)
+                    loss + retry            (Basement)
 
 The only win is choosing the Basement, then Dry Storage Unit A. However, when faced with an end game situation, the user is asked if
 they want to try again. If their input is y, for yes, the defined "escaping_sanctum()" function is executed, which asks the question:
