@@ -53,37 +53,38 @@ response in the "user info" section, nothing is stored as their item, and the pr
 
 
 
-.                      (Escaping Toro Sanctum)
-.                                 |
-.                            (User info)
-.                                 |
-.                       (Introduction: Start?)
-.                                 |
-.                 (Mission Objective: Will you Search..?)
-.                                /|\
-.                               / | \
-.                              /  |  \
-.                            /    |    \
-.                          /      |      \
-.                        /        |        \
-.             (Basement)        (Lab)      (Elevator) 
-.                  /|             |             \
-.               /   |             |              |
-.              /    |             |              |
-.   (Dry Storage)   |             |           loss + retry
-.     Unit A        |             |                 
-.      Win          |             |                      
-.                   |             |                        
-.              (Freezer)          |                         
-.                Unit B           |                          
-.           loss + retry          |                        
-.                                 /\                      
-.                               /    \                   
-.                             /        \                   
-.                          /              \              
-.                (Emergency Exit)        (Return to Basement)
-.                        |                       |
-.                   loss + retry            (Basement)
+                       (Escaping Toro Sanctum)
+                                  |
+                             (User info)
+                                  |
+                       (Introduction: Start?)
+                                  |
+                (Mission Objective: Will you Search..?)
+                                 /|\
+                                / | \
+                               /  |  \
+                             /    |    \
+                           /      |      \
+                         /        |        \
+              (Basement)        (Lab)      (Elevator) 
+                   /|             |             \
+                /   |             |              |
+               /    |             |              |
+    (Dry Storage)   |             |           loss + retry
+      Unit A        |             |                 
+       Win          |             |                      
+                    |             |                        
+               (Freezer)          |                         
+                 Unit B           |                          
+            loss + retry          |                        
+                                  /\                      
+                                /    \                   
+                              /        \                   
+                           /              \              
+               (Emergency Exit)        (Return to Basement)
+                       |                       |
+                  loss + retry            (Basement)
+
 
 The only win is choosing the Basement, then Dry Storage Unit A. However, when faced with an end game situation, the user is asked if
 they want to try again. If their input is y, for yes, the defined "escaping_sanctum()" function is executed, which asks the question:
